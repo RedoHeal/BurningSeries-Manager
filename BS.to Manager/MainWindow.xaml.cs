@@ -443,11 +443,11 @@ namespace BS.to_Manager
                     {
                         if (chb_first.IsChecked == true)
                         {
-                            System.Diagnostics.Process.Start(Regex.Replace(sites[i], @"(https://bs.to/serie/[^/]+)/\d([^;]+);.*", @"$1/1$2")).WaitForExit(5000);
+                            System.Diagnostics.Process.Start(@"explorer.exe", Regex.Replace(sites[i], @"(https://bs.to/serie/[^/]+)/\d+([^;]+);.*", @"$1/1$2")).WaitForExit(5000);
                         }
                         else
                         {
-                            System.Diagnostics.Process.Start(Regex.Replace(sites[i], @"(https://bs.to/serie/[^;]+);.*", "$1")).WaitForExit(5000);
+                            System.Diagnostics.Process.Start(@"explorer.exe", Regex.Replace(sites[i], @"(https://bs.to/serie/[^;]+);.*", "$1")).WaitForExit(5000);
                         }
                         meny--;
                     }
@@ -461,11 +461,11 @@ namespace BS.to_Manager
             {
                 if (chb_first.IsChecked == true)
                 {
-                    System.Diagnostics.Process.Start(Regex.Replace(sites[nr[meny]], @"(https://bs.to/serie/[^/]+)/\d([^;]+);.*", @"$1/1$2")).WaitForExit(5000);
+                    System.Diagnostics.Process.Start(@"explorer.exe", Regex.Replace(sites[nr[meny]], @"(https://bs.to/serie/[^/]+)/\d+([^;]+);.*", @"$1/1$2")).WaitForExit(5000);
                 }
                 else
                 {
-                    System.Diagnostics.Process.Start(Regex.Replace(sites[nr[meny]], @"(https://bs.to/serie/[^;]+);.*", "$1")).WaitForExit(5000);
+                    System.Diagnostics.Process.Start(@"explorer.exe", Regex.Replace(sites[nr[meny]], @"(https://bs.to/serie/[^;]+);.*", "$1")).WaitForExit(5000);
                 }
             }
             SaveConfig();

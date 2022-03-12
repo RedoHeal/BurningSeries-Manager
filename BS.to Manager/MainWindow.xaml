@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:BS.to_Manager"
         mc:Ignorable="d"
         
-        Title="BS.to Manager" MinHeight="525" MinWidth="800" Width="800" Height="525" TextOptions.TextFormattingMode="Display" Opacity="0.75" WindowStyle="ThreeDBorderWindow" ResizeMode="CanResizeWithGrip" FontWeight="Medium" Icon="/BS.to.ico">
+        Title="BS.to Manager" MinHeight="525" MinWidth="800" Width="800" Height="525" TextOptions.TextFormattingMode="Display" Opacity="0.75" WindowStyle="ThreeDBorderWindow" ResizeMode="CanResizeWithGrip" FontWeight="Medium">
 
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
